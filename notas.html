@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inicio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="./Styles/global.css" />
+    <link rel="stylesheet" href="./Styles/notas.css" />
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <a class="navbar__brand" href="index.html">Trabalho S05</a>
+        <button class="navbar__toggle" aria-label="Abrir menu"><i class="fa-solid fa-bars"></i></button>
+        <ul class="navbar__links">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="horario.html">Horarios</a></li>
+            <li><a href="notas.html" active>Notas</a></li>
+            <li><a href="frequencia.html">Frequencia</a></li>
+            <li><a href="config.html">Configurações</a></li>
+        </ul>
+    </nav>
+
+
+    <section class="sectionNotas">
+        <div class="grades">
+            <header class="grades__header">
+                <h1 class="textPrimary">Notas por disciplina</h1>
+                <p class="textSecondary">Escolha uma disciplina para visualizar seus lançamentos.</p>
+            </header>
+
+            <div class="selector_class">
+                <button class="selector_class__item is-active" data-course="C06-A"><span>C06 - A</span></button>
+                <button class="selector_class__item" data-course="F01-A"><span>F01 - A</span></button>
+                <button class="selector_class__item" data-course="E07-A"><span>E07 - A</span></button>
+                <button class="selector_class__item" data-course="C07-B"><span>C07 - B</span></button>
+                <button class="selector_class__item" data-course="M03-B"><span>M03 - B</span></button>
+                <button class="selector_class__item" data-course="S05-B"><span>S05 - B</span></button>
+            </div>
+
+            <div class="grades__panels">
+
+                <article class="grade-card is-active" data-course="C06-A">
+                    <header>
+                        <h2>C06 - A</h2>
+                        <p>Programacao Orientada a objetos</p>
+                    </header>
+                    <div class="grade-grid grade-grid--split">
+                        <div class="grade-pill">
+                            <span>N1</span>
+                            <strong>8.4</strong>
+                        </div>
+                        <div class="grade-pill">
+                            <span>N2</span>
+                            <strong>7.9</strong>
+                        </div>
+                    </div>
+
+                    <footer>
+                        <div>
+                            <div class="grade-grid grade-grid--split">
+                                <div class="grade-pill"><span>FAZER NP3?</span><strong>NAO</strong></div>
+                            </div>
+                        </div>
+                    </footer>
+
+                </article>
+
+                <article class="grade-card" data-course="F01-A">
+                    <header>
+                        <h2>F01</h2>
+                        <p>Fisica I</p>
+                    </header>
+                    <div class="grade-grid grade-grid--split">
+                        <div class="grade-pill">
+                            <span>N1</span>
+                            <strong>6.2</strong>
+                        </div>
+                        <div class="grade-pill">
+                            <span>N2</span>
+                            <strong>4.2</strong>
+                        </div>
+                    </div>
+
+                    <footer>
+                        <div>
+                            <div class="grade-grid grade-grid--split">
+                                <div class="grade-pill"><span>FAZER NP3?</span><strong>SIM</strong></div>
+                            </div>
+                        </div>
+                    </footer>
+
+
+                </article>
+
+                <article class="grade-card" data-course="E07-A">
+                    <header>
+                        <h2>E07 - A</h2>
+                        <p>Digital I</p>
+                    </header>
+                    <div class="grade-grid grade-grid--split">
+                        <div class="grade-pill"><span>N1</span><strong>7.8</strong></div>
+                        <div class="grade-pill"><span>N2</span><strong>8.6</strong></div>
+                    </div>
+
+                    <footer>
+                        <div>
+                            <div class="grade-grid grade-grid--split">
+                                <div class="grade-pill"><span>FAZER NP3?</span><strong>NAO</strong></div>
+                            </div>
+                        </div>
+                    </footer>
+
+                </article>
+
+                <article class="grade-card" data-course="C07-B">
+                    <header>
+                        <h2>C07 - B</h2>
+                        <p>Banco de dados</p>
+                    </header>
+                    <div class="grade-grid grade-grid--split">
+                        <div class="grade-pill"><span>N1</span><strong>6.9</strong></div>
+                        <div class="grade-pill"><span>N2</span><strong>8.3</strong></div>
+                    </div>
+
+                    <footer>
+                        <div>
+                            <div class="grade-grid grade-grid--split">
+                                <div class="grade-pill"><span>FAZER NP3?</span><strong>NAO</strong></div>
+                            </div>
+                        </div>
+                    </footer>
+
+                </article>
+
+                <article class="grade-card" data-course="M03-B">
+                    <header>
+                        <h2>M03 - B</h2>
+                        <p>Calculo I</p>
+                    </header>
+                    <ul class="grade-list">
+                        <li><span>EX1</span><strong>7.4</strong></li>
+                        <li><span>Prova 1</span><strong>8.1</strong></li>
+                        <li><span>EX2</span><strong>7.8</strong></li>
+                        <li><span>Prova 2</span><strong>8.5</strong></li>
+                        <li><span>P2</span><strong>8.3</strong></li>
+                        <li><span>NP1</span><strong>8.0</strong></li>
+                        <li><span>EX3</span><strong>8.6</strong></li>
+                        <li><span>Prova 3</span><strong>8.9</strong></li>
+                        <li><span>NP2</span><strong>8.5</strong></li>
+                    </ul>
+
+                    <footer>
+                        <div>
+                            <div class="grade-grid grade-grid--split">
+                                <div class="grade-pill"><span>FAZER NP3?</span><strong>NAO</strong></div>
+                            </div>
+                        </div>
+                    </footer>
+
+                </article>
+
+                <article class="grade-card" data-course="S05-B">
+                    <header>
+                        <h2>S05 - B</h2>
+                        <p>Interface Homem Maquina</p>
+                    </header>
+                    <ul class="grade-list">
+                        <li><span>Prova 1</span><strong>8.7</strong></li>
+                        <li><span>Exercício 1</span><strong>9.0</strong></li>
+                        <li><span>NP1</span><strong>8.8</strong></li>
+                        <li><span>Exercício 2</span><strong>8.9</strong></li>
+                        <li><span>Prova 2</span><strong>9.2</strong></li>
+                        <li><span>NP2</span><strong>9.0</strong></li>
+                    </ul>
+
+                    <footer>
+                        <div>
+                            <div class="grade-grid grade-grid--split">
+                                <div class="grade-pill"><span>FAZER NP3?</span><strong>NAO</strong></div>
+                            </div>
+                        </div>
+                    </footer>
+
+                </article>
+
+
+
+            </div>
+        </div>
+    </section>
+
+    <script src="./JavaScript/index.js"></script>
+</body>
+
+</html>

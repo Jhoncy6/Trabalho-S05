@@ -1,9 +1,11 @@
 @import url("./global.css");
 
 .textPrimary {
-    color: var(--color-primary);
+    background: var(--color-primary-gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
     font-size: var(--font-size-primary);
-    color: #;
 }
 
 .textSecondary {
