@@ -1,3 +1,5 @@
+@import url("./global.css");
+
 .sectionSchedule {
     padding: 2.5rem 1rem 3.5rem;
 }
@@ -29,14 +31,14 @@
 .scheduleTable td {
     border: 1px solid #cfd9ff;
     text-align: center;
-    padding: 0.9rem 0.6rem;
+    padding: 0.5rem 0.8rem;
     min-width: 140px;
 }
 
 .scheduleTable thead th {
-    background: #1e60ad;
+    background: var(--color-primary);
     color: #fff;
-    font-weight: 600;
+    font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.06em;
 }
@@ -44,7 +46,7 @@
 .scheduleTable tbody th {
     background: #eef2ff;
     font-weight: 600;
-    color: #1e60ad;
+    color: var(--color-primary);
 }
 
 .scheduleTable td {
@@ -53,15 +55,15 @@
 
 .scheduleTable td strong {
     display: block;
-    color: #1e60ad;
-    font-weight: 600;
+    color: var(--color-primary);
+    font-weight: 700;
 }
 
 .scheduleTable td small {
     display: block;
     color: var(--color-fakeBlack);
     font-size: 0.9rem;
-    font-weight: bold;
+    font-weight: 800;
     margin-top: 0.25rem;
 }
 
