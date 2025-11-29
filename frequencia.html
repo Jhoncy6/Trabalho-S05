@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Horarios</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="./Styles/global.css" />
+    <link rel="stylesheet" href="./Styles/frequencia.css" />
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <a class="navbar__brand" href="index.html">Trabalho S05</a>
+        <button class="navbar__toggle" aria-label="Abrir menu"><i class="fa-solid fa-bars"></i></button>
+        <ul class="navbar__links">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="horario.html">Horarios</a></li>
+            <li><a href="notas.html">Notas</a></li>
+            <li><a href="frequencia.html" active>Frequencia</a></li>
+            <li><a href="geral.html">Geral</a></li>
+        </ul>
+    </nav>
+
+    <section class="sectionFrequencia">
+        <div class="frequency">
+            <header class="frequency__header">
+                <h1 class="textPrimary">Frequência por disciplina</h1>
+                <p class="textSecondary">Selecione uma disciplina para ver as faltas por mês.</p>
+            </header>
+
+            <div class="frequency-selector">
+                <button class="frequency-selector__item is-active" data-course="C06-A">C06 - A</button>
+                <button class="frequency-selector__item" data-course="F01-A">FO1 - A</button>
+                <button class="frequency-selector__item" data-course="E07-A">E07 - A</button>
+                <button class="frequency-selector__item" data-course="C07-B">C07 - B</button>
+                <button class="frequency-selector__item" data-course="M03-B">M03 - B</button>
+                <button class="frequency-selector__item" data-course="S05-B">S05 - B</button>
+            </div>
+
+            <div class="frequency-panels">
+
+
+                <article class="frequency-card is-active" data-course="C06-A">
+                    <header>
+                        <h2>C06 - A</h2>
+                        <p>Programacao Orientada a objetos</p>
+                    </header>
+                    <ul class="frequency-months">
+                        <li><span>Julho</span><strong>1 falta</strong></li>
+                        <li><span>Agosto</span><strong>0 faltas</strong></li>
+                        <li><span>Setembro</span><strong>1 falta</strong></li>
+                        <li><span>Outubro</span><strong>0 faltas</strong></li>
+                        <li><span>Novembro</span><strong>2 faltas</strong></li>
+                        <li><span>Dezembro</span><strong>0 faltas</strong></li>
+                    </ul>
+                    <div class="frequency-summary">
+                        <div class="summary-card">
+                            <span>Aulas ministradas</span>
+                            <strong>70</strong>
+                        </div>
+                        <div class="summary-card">
+                            <span>Limite previsto</span>
+                            <strong>20</strong>
+                        </div>
+                        <div class="summary-card">
+                            <span>Total de faltas</span>
+                            <strong>10</strong>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="frequency-card " data-course="F01-A">
+                    <header>
+                        <h2>F01 - A</h2>
+                        <p>Fisica I</p>
+                    </header>
+                    <ul class="frequency-months">
+                        <li><span>Julho</span><strong>1 falta</strong></li>
+                        <li><span>Agosto</span><strong>0 faltas</strong></li>
+                        <li><span>Setembro</span><strong>1 falta</strong></li>
+                        <li><span>Outubro</span><strong>0 faltas</strong></li>
+                        <li><span>Novembro</span><strong>2 faltas</strong></li>
+                        <li><span>Dezembro</span><strong>0 faltas</strong></li>
+                    </ul>
+                    <div class="frequency-summary">
+                        <div class="summary-card">
+                            <span>Aulas ministradas</span>
+                            <strong>64</strong>
+                        </div>
+                        <div class="summary-card">
+                            <span>Limite previsto</span>
+                            <strong>60</strong>
+                        </div>
+                        <div class="summary-card">
+                            <span>Total de faltas</span>
+                            <strong>12</strong>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="frequency-card" data-course="E07-A">
+                    <header>
+                        <h2>E07 - A</h2>
+                        <p>Digital I</p>
+                    </header>
+                    <ul class="frequency-months">
+                        <li><span>Julho</span><strong>0 faltas</strong></li>
+                        <li><span>Agosto</span><strong>2 faltas</strong></li>
+                        <li><span>Setembro</span><strong>1 falta</strong></li>
+                        <li><span>Outubro</span><strong>0 faltas</strong></li>
+                        <li><span>Novembro</span><strong>0 faltas</strong></li>
+                        <li><span>Dezembro</span><strong>1 falta</strong></li>
+                    </ul>
+                    <div class="frequency-summary">
+                        <div class="summary-card"><span>Aulas ministradas</span><strong>34</strong></div>
+                        <div class="summary-card"><span>Limite previsto</span><strong>10</strong></div>
+                        <div class="summary-card"><span>Total de faltas</span><strong>8</strong></div>
+                    </div>
+                </article>
+
+                <article class="frequency-card" data-course="C07-B">
+                    <header>
+                        <h2>C07 - B</h2>
+                        <p>Banco de Dados</p>
+                    </header>
+                    <ul class="frequency-months">
+                        <li><span>Julho</span><strong>1 falta</strong></li>
+                        <li><span>Agosto</span><strong>1 falta</strong></li>
+                        <li><span>Setembro</span><strong>0 faltas</strong></li>
+                        <li><span>Outubro</span><strong>2 faltas</strong></li>
+                        <li><span>Novembro</span><strong>1 falta</strong></li>
+                        <li><span>Dezembro</span><strong>0 faltas</strong></li>
+                    </ul>
+                    <div class="frequency-summary">
+                        <div class="summary-card"><span>Aulas ministradas</span><strong>72</strong></div>
+                        <div class="summary-card"><span>Limite previsto</span><strong>20</strong></div>
+                        <div class="summary-card"><span>Total de faltas</span><strong>18</strong></div>
+                    </div>
+                </article>
+
+                <article class="frequency-card" data-course="M03-B">
+                    <header>
+                        <h2>M03 - B</h2>
+                        <p>Calculo I</p>
+                    </header>
+                    <ul class="frequency-months">
+                        <li><span>Julho</span><strong>2 faltas</strong></li>
+                        <li><span>Agosto</span><strong>1 falta</strong></li>
+                        <li><span>Setembro</span><strong>1 falta</strong></li>
+                        <li><span>Outubro</span><strong>0 faltas</strong></li>
+                        <li><span>Novembro</span><strong>0 faltas</strong></li>
+                        <li><span>Dezembro</span><strong>1 falta</strong></li>
+                    </ul>
+                    <div class="frequency-summary">
+                        <div class="summary-card"><span>Aulas ministradas</span><strong>72</strong></div>
+                        <div class="summary-card"><span>Limite previsto</span><strong>20</strong></div>
+                        <div class="summary-card"><span>Total de faltas</span><strong>18</strong></div>
+                    </div>
+                </article>
+
+                <article class="frequency-card" data-course="S05-B">
+                    <header>
+                        <h2>S05 - B</h2>
+                        <p>Interface Homem Maquina</p>
+                    </header>
+                    <ul class="frequency-months">
+                        <li><span>Julho</span><strong>0 faltas</strong></li>
+                        <li><span>Agosto</span><strong>0 faltas</strong></li>
+                        <li><span>Setembro</span><strong>1 falta</strong></li>
+                        <li><span>Outubro</span><strong>0 faltas</strong></li>
+                        <li><span>Novembro</span><strong>1 falta</strong></li>
+                        <li><span>Dezembro</span><strong>0 faltas</strong></li>
+                    </ul>
+                    <div class="frequency-summary">
+                        <div class="summary-card"><span>Aulas ministradas</span><strong>67</strong></div>
+                        <div class="summary-card"><span>Limite previsto</span><strong>20</strong></div>
+                        <div class="summary-card"><span>Total de faltas</span><strong>16</strong></div>
+                    </div>
+                </article>
+
+
+            </div>
+        </div>
+    </section>
+
+    <script src="./JavaScript/index.js"></script>
+</body>
+
+</html>

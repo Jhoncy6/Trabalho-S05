@@ -1,21 +1,20 @@
 @import url("./global.css");
 
 .sectionSchedule {
-    padding: 2.5rem 1rem 3.5rem;
+    padding: 2rem;
 }
 
 .scheduleTable {
     max-width: 1200px;
     margin: 0 auto;
 }
-
 .scheduleTable header {
     text-align: center;
     margin-bottom: 1.5rem;
 }
 
 .scheduleTable__wrapper {
-    overflow-x: auto;
+    overflow: hidden;
     border-radius: 1.5rem;
     box-shadow: 0 20px 40px rgba(15, 58, 116, 0.12);
 }

@@ -28,3 +28,22 @@ if (gradeButtons.length && gradePanels.length) {
     });
   });
 }
+
+const frequencyButtons = document.querySelectorAll(".frequency-selector__item");
+const frequencyCards = document.querySelectorAll(".frequency-card");
+
+if (frequencyButtons.length && frequencyCards.length) {
+  frequencyButtons.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const course = btn.dataset.course;
+
+      frequencyButtons.forEach((item) =>
+        item.classList.toggle("is-active", item === btn)
+      );
+
+      frequencyCards.forEach((card) =>
+        card.classList.toggle("is-active", card.dataset.course === course)
+      );
+    });
+  });
+}
