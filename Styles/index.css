@@ -1,0 +1,15 @@
+@import url("./global.css");
+
+.textPrimary {
+    background: var(--color-primary-gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: var(--font-size-primary);
+
+}
+
+.textSecondary {
+    color: var(--color-fakeBlack);
+    font-size: var(--font-size-secondary);
+}

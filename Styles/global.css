@@ -1,0 +1,98 @@
+:root {
+    
+    /* Config padrao TextoPrimario */
+    --font-size-primary: 2.6rem;
+    --color-primary: #1e60ad;
+    --color-primary-gradient: linear-gradient(135deg, #1e60ad 0%, #4d85cb 50%, #0f3a74 100%);
+    
+    /* Config padrao TextoSecundario */
+    --color-fakeBlack: #3F4A4D;
+    --font-size-secondary: 1.6rem;
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #edf2f5;
+    color: #000
+}
+
+.navbar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    background: #ffffff;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.navbar__brand {
+    font-weight: 600;
+    color: var(--color-primary);
+    text-decoration: none;
+}
+
+.navbar__links {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar__links li {
+    padding: 0.4rem 0.8rem;
+    border-radius: 0.4rem;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+.navbar__links li:hover {
+    background: rgba(30, 96, 173, 0.08);
+}
+
+.navbar__links a {
+    color: #2f2f2f;
+    text-decoration: none;
+    font-weight: 500;
+    position: relative;
+    padding-bottom: 0.3rem;
+}
+
+.navbar__links a[active]::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 0.2rem;
+    border-radius: 999px;
+    background: #1e60ad;
+}
+
+.navbar__toggle {
+    display: none;
+    flex-direction: column;
+    gap: 0.3rem;
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
+.navbar__toggle span {
+    width: 1.5rem;
+    height: 0.2rem;
+    background: #2f2f2f;
+}
+
+.default-box {
+    display: flex;
+    flex-direction: column;
+    margin: 3rem 13rem ;
+    padding: 2.3rem;
+    border: 1px solid #e6e6e6;
+    border-radius: 0.4rem;
+    background: #ffffff;
+}
+
+
