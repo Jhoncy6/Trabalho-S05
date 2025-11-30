@@ -1,12 +1,12 @@
 .quick-links {
-    padding-top: 50px;
+    padding-top: 40px;
     display: flex;
     justify-content: center;
     flex-direction: column;
     gap: 1.25rem;
     max-width: 600px;
     margin: 0 auto;
-    gap: 2.4rem;
+    gap: 2rem;
 }
 
 .quick-card {
@@ -44,8 +44,7 @@
 .quick-card h2 {
     margin: 0;
     font-size: 1.2rem;
-    color: var(--color-fakeBlack);
-    font-weight: 900;
+    
 }
 
 .quick-card p {
@@ -54,10 +53,17 @@
     font-size: 0.95rem;
 }
 
+.quick-card--pending {
+    background: #eef2ff;
+    box-shadow: 0 15px 32px rgba(15, 58, 116, 0.1);
+}
+
+.quick-card--pending:hover {
+    transform: translateY(-4px);
+}
+
 @media (max-width: 600px) {
     .quick-card {
-        margin-left: 100px;
-        margin-right: 100px;
         padding: 1.2rem;
     }
 }

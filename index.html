@@ -14,8 +14,16 @@
 <body>
 
   <nav class="navbar">
-    <a class="navbar__brand" href="index.html">Trabalho S05</a>
-    <button class="navbar__toggle" aria-label="Abrir menu"><i class="fa-solid fa-bars"></i></button>
+    <a class="navbar__brand" href="index.html" aria-label="Página inicial">
+      <img src="https://inatel.br/radiocomunicacao/images/logo-inatel.png" alt="Inatel" />
+    </a>
+
+    <button class="navbar__toggle" aria-label="Abrir menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
     <ul class="navbar__links">
       <li><a href="index.html" active>Início</a></li>
       <li><a href="horario.html">Horarios</a></li>
@@ -36,6 +44,68 @@
     </div>
 
   </section>
+
+
+  <section>
+    <div class="default-box">
+      <header class="grades__header">
+        <h1 class="textPrimary">Novas Noticias</h1>
+      </header>
+
+
+      <div class="news">
+        <div class="news-grid">
+          <article class="news-card">
+            <img src="https://inatel.br/noticias/images/time-valorant-5354_900.webp" alt="E-Sports" />
+            <div class="news-card__body">
+              <h3>Inatel e-Sports disputa finais do JUBs em Brasília</h3>
+              <p>No próximo dia 13 de outubro, a equipe do Inatel e-Sports estará em Brasília para disputar as finais
+                presenciais dos Jogos Universitários Brasileiros - JUBs</p>
+            </div>
+          </article>
+
+          <article class="news-card">
+            <img
+              src="https://inatel.br/noticias/images/sumo-3kg-rc-se-destaca-no-rha-robotics-e-representara-o-brasil-na-principal-competicao-internacional-da-categoria-6507_900.webp"
+              alt="RobtBulls" />
+            <div class="news-card__body">
+              <h3>RobtBulls vence competição na Colômbia e garante vaga no Mundial de Sumô de Robôs no Japão</h3>
+              <p>A RobotBulls, equipe de robótica do Instituto Nacional de Telecomunicações ‒ Inatel, conquistou o 1º
+                lugar na categoria Sumô 3kg RC durante o RHA Robotics</p>
+            </div>
+          </article>
+
+          <article class="news-card">
+            <img
+              src="https://inatel.br/noticias/images/projeto-nativos-do-futuro-foi-premiado-por-promover-transformacao-digital-e-preparar-jovens-para-as-profissoes-do-futuro-6548_900.webp"
+              alt="premio" />
+            <div class="news-card__body">
+              <h3>Educação e tecnologia garantem destaque nacional ao Inatel no Prêmio Ozires Silva</h3>
+              <p>O Inatel foi reconhecido como destaque nacional durante a cerimônia do Prêmio Brasil Digital Ozires
+                Silva, realizada no dia 3 de novembro, em São Paulo (SP)</p>
+            </div>
+          </article>
+
+          <article class="news-card">
+            <img
+              src="https://inatel.br/noticias/images/instituto-e-o-unico-do-setor-privado-a-receber-nota-maxima-no-curso-6531_900.webp"
+              alt="melhorTeleco" />
+            <div class="news-card__body">
+              <h3>Inatel tem a melhor Engenharia de Telecomunicações do país</h3>
+              <p>Pela 4ª vez consecutiva, o curso de Engenharia de Telecomunicações do Instituto Nacional de
+                Telecomunicações ‒ Inatel, recebeu nota máxima (5 estrelas) na avaliação do Guia da Faculdade 2025,
+                desenvolvido pelo Estadão e pela Quero Educação.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+
+
+    </div>
+
+
+  </section>
+
 
   <script src="./JavaScript/index.js"></script>
 </body>
